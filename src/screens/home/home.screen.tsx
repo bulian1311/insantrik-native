@@ -1,11 +1,17 @@
 import React from "react";
 import { Text } from "@ui-kitten/components";
+import { Spacer, CategoryListHorizontal } from "../../components";
 import { Layout } from "../../containers";
+import { StyledHeader } from "./home.styled";
 
 export const HomeScreen = () => {
   return (
-    <Layout style={{ flex: 1 }}>
-      <Text category="h1">HomeScreen</Text>
+    <Layout>
+      <StyledHeader>
+        <Text category="h5">HomeScreen</Text>
+      </StyledHeader>
+      <Spacer />
+      <CategoryListHorizontal />
     </Layout>
   );
 };
