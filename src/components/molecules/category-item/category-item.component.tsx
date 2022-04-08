@@ -8,9 +8,9 @@ export const CategoryItem = ({ category, ...props }: Props) => {
   return (
     <StyledWrapper>
       <StyledView borderColor={theme["color-primary-default"]} {...props}>
-        <StyledIcon name={category} pack="assets" />
+        <StyledIcon name={category.icon} pack="assets" />
       </StyledView>
-      <Text appearance="hint">Блузки и рубашки</Text>
+      <Text appearance="hint">{category.name}</Text>
     </StyledWrapper>
   );
 };

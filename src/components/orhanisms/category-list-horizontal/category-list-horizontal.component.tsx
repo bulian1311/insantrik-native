@@ -2,12 +2,12 @@ import React from "react";
 import { CategoryItem, ListHorizontal } from "../../molecules";
 
 const categories = [
-  { name: "dress", id: "sdfsdgsfadasd1" },
-  { name: "dress", id: "sdfsdgsfadasd2" },
-  { name: "dress", id: "sdfsdgsfadasd3" },
-  { name: "dress", id: "sdfsdgsfadasd4" },
-  { name: "dress", id: "sdfsdgsfadasd5" },
-  { name: "dress", id: "sdfsdgsfadasd6" },
+  { name: "dress", id: "sdfsdgsfadasd1", icon: "woman-bathing-suit" },
+  { name: "dress", id: "sdfsdgsfadasd2", icon: "woman-bathing-suit" },
+  { name: "dress", id: "sdfsdgsfadasd3", icon: "woman-bathing-suit" },
+  { name: "dress", id: "sdfsdgsfadasd4", icon: "woman-bathing-suit" },
+  { name: "dress", id: "sdfsdgsfadasd5", icon: "woman-bathing-suit" },
+  { name: "dress", id: "sdfsdgsfadasd6", icon: "woman-bathing-suit" },
 ];
 
 export const CategoryListHorizontal = () => {
@@ -15,7 +15,7 @@ export const CategoryListHorizontal = () => {
     <ListHorizontal
       data={categories}
       keyExtractor={(category: any) => category.id}
-      renderItem={({ item }: any) => <CategoryItem category={item.name} />}
+      renderItem={({ item }: any) => <CategoryItem category={item} />}
       title="Категории"
       navigateTo="Home"
     />
