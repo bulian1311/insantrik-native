@@ -11,3 +11,7 @@ export const StyledLayout = styled(Layout)<{
     padding-right: ${theme.spacing.space[4]};
   `}
 `;
+
+export const StyledScrollView = styled.ScrollView`
+  flex: 1;
+`;

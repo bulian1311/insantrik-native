@@ -1,12 +1,15 @@
 import React from "react";
-import { Text } from "@ui-kitten/components";
+import { Text, Divider } from "@ui-kitten/components";
 import { Layout } from "../../containers";
-import { Props } from "./explore.props";
+import { Spacer, CategoryItem } from "../../components";
 
-export const ExploreScreen = ({ ...props }: Props) => {
+export const ExploreScreen = () => {
   return (
-    <Layout>
-      <Text category="h1">Explore</Text>
+    <Layout scrolled>
+      <Spacer size="s" />
+      <Text category="h5">Женщинам</Text>
+
+      <Divider />
     </Layout>
   );
 };

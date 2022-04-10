@@ -3,4 +3,5 @@ import { SafeAreaView } from "react-native";
 
 export type Props = ComponentProps<typeof SafeAreaView> & {
   fullHeight?: boolean;
+  scrolled?: boolean;
 };
