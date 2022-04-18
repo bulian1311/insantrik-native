@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import { Spacer } from "../../atoms";
 import { NavLink } from "../nav-link";
 import { Props } from "./list-horizontal.props";
-import { Text } from "@ui-kitten/components";
+import { Text, Divider } from "@ui-kitten/components";
 import { StyledView, StyledFlatList } from "./list-horizontal.styled";
 
 export const ListHorizontal = ({ title, navigateTo, ...props }: Props) => {
@@ -14,7 +14,9 @@ export const ListHorizontal = ({ title, navigateTo, ...props }: Props) => {
         {navigateTo && <NavLink title="Подробнее" navigateTo={navigateTo} />}
       </StyledView>
 
-      <Spacer pos="top" size="m" />
+      <Spacer pos="top" size="xs" />
+      <Divider />
+      <Spacer pos="top" size="s" />
 
       <StyledFlatList
         {...props}

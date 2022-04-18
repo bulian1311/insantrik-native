@@ -1,4 +1,4 @@
-import axios, { AxiosResponse, Method } from "axios";
+import axios from "axios";
 
 axios.interceptors.response.use(undefined, (error) => {
   const { status } = error.response;
