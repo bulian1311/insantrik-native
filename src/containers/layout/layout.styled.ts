@@ -9,6 +9,7 @@ export const StyledLayout = styled(Layout)<{
     padding-top: ${theme.spacing.space[6]};
     padding-left: ${theme.spacing.space[4]};
     padding-right: ${theme.spacing.space[4]};
+    justify-content: flex-start;
   `}
 `;
 

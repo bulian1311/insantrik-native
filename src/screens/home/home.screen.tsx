@@ -1,6 +1,10 @@
 import React from "react";
 import { Text } from "@ui-kitten/components";
-import { Spacer, CategoryListHorizontal } from "../../components";
+import {
+  Spacer,
+  CategoryListHorizontal,
+  ProductListHorizontal,
+} from "../../components";
 import { Layout } from "../../containers";
 import { StyledHeader } from "./home.styled";
 
@@ -12,6 +16,8 @@ export const HomeScreen = () => {
       </StyledHeader>
       <Spacer />
       <CategoryListHorizontal />
+
+      <ProductListHorizontal products={[]} />
     </Layout>
   );
 };

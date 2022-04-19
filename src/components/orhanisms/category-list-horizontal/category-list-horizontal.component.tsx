@@ -1,5 +1,6 @@
 import React from "react";
 import { CategoryItem, ListHorizontal } from "../../molecules";
+import { StyledView } from "./category-list-horizontal.styled";
 
 const categories = [
   { name: "dress", id: "sdfsdgsfadasd1", icon: "woman-bathing-suit" },
@@ -12,12 +13,14 @@ const categories = [
 
 export const CategoryListHorizontal = () => {
   return (
-    <ListHorizontal
-      data={categories}
-      keyExtractor={(category: any) => category.id}
-      renderItem={({ item }: any) => <CategoryItem category={item} />}
-      title="Категории"
-      navigateTo="Home"
-    />
+    <StyledView>
+      <ListHorizontal
+        data={categories}
+        keyExtractor={(category: any) => category.id}
+        renderItem={({ item }: any) => <CategoryItem category={item} />}
+        title="Категории"
+        navigateTo="Home"
+      />
+    </StyledView>
   );
 };
