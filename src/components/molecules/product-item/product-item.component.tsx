@@ -1,19 +1,20 @@
 import React from "react";
 import { Props } from "./product-item.props";
 import { Image } from "../../atoms";
+import { priceFormater } from "../../../utils";
 import { Card, Text } from "@ui-kitten/components";
 
 export const ProductItem = ({ product }: Props) => {
-  const Header = () => <Image height={50} src={product.img} />;
-
+  const price: string = priceFormater.format(Number(product.price));
   return (
-    <Card>
+    <Card style={{ width: 156 }}>
       <Image
-        width={120}
-        height={180}
+        width={115}
+        height={160}
         src={"https://hwpics.sliza.ru/insantrik_ru/80/72/28072.jpeg"}
       />
-      <Text>wewewesdsdsd</Text>
+      <Text>{product.name}</Text>
+      <Text status="primary">{price}</Text>
     </Card>
   );
 };

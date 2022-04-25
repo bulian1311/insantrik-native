@@ -1,12 +1,13 @@
 export type TProduct = {
-  price: string;
+  price: string | number;
   currency: string;
   name: string;
   material: string;
   compoud: string;
   color: string;
   producer: string;
-  height: string;
+  heigth: string;
   size: string;
+  pic: string;
   img: string;
 };
