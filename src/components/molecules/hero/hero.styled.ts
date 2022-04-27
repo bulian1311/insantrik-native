@@ -2,7 +2,7 @@ import styled from "styled-components/native";
 
 export const StyledView = styled.View`
   height: 206px;
-  border-radius: ${({ theme }) => theme.radius[1]};
+  border-radius: 4px;
   overflow: hidden;
 `;
 

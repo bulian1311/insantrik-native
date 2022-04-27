@@ -16,11 +16,11 @@ export const Hero = ({ children, title, description, ...props }: Props) => {
         }}
         resizeMode="cover"
       >
-        <Text category="h1" status="info">
+        <Text category="h2" status="control">
           {title}
         </Text>
         <Spacer pos="top" size="xl" />
-        {description && <Text status="info">{description}</Text>}
+        {description && <Text status="control">{description}</Text>}
         {children}
       </StyledBg>
     </StyledView>
